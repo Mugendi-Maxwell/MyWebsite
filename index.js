@@ -1,9 +1,15 @@
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+
+document.getElementById('menuButton').addEventListener('click', function() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
 });
+
+
+function showSection(sectionId) {
+    const sections = ['home', 'skills', 'projects', 'contact'];
+    sections.forEach(id => {
+        const section = document.getElementById(id);
+        section.style.display = (id === sectionId) ? 'block' : 'none';
+    });
+    document.getElementById('dropdownMenu').style.display = 'none'; 
+}

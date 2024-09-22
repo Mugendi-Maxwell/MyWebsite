@@ -3,56 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
     
-    <section id="home">
-        <h1>About Me</h1>
-        <p>At just 18 years old, I’ve already developed a diverse range of passions that shape my life. Coding captivates me; there's something incredibly rewarding about transforming ideas into functional programs. I love the challenge of problem-solving and the thrill of watching my projects come to life, whether it's a sleek website or a handy app. This technical creativity fuels my curiosity and keeps me constantly learning.</p>
+    <section id="home" class="main-section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is the home section, showcasing a brief introduction about you.</p>
+        <button id="menuButton">☰ Menu</button>
 
-        <p> Football is another huge part of my world, with Chelsea FC holding a special place in my heart. I can't hide my disdain for Arsenal FC and Manchester United, rivalries that ignite fierce debates,like what color is london which is blue among friends and fellow fans. The anticipation of match days, the rush of adrenaline during each game, and the joy of celebrating victories are experiences that bond me with supporters around the globe, even from my home in Kenya.</p>
-            
-        <p> Beyond football, I’m a massive fan of Formula One. The speed, precision, and strategy involved in each race are utterly captivating. Watching my favorite drivers push the limits of technology and skill keeps my adrenaline pumping. This combination of coding, football, and motorsport creates a vibrant tapestry of interests that defines my journey so far and shapes my aspirations for the future.</p>
-        <p>Currently am student at Moringa just getting started with software development something that has interested me for ages but my desire to code got serious after highschool </p>
-        <p>For now am learning software engineering something am excited about. </p>
         
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Up to now I have worked with front-end languages,thats HTML,JAVASCRIPT and CASCADING SYLESHEET or CSS for short i have also worked with python.</p>
-        <p>At this point I can confidently say am good in front-end development and can only get better and can't wait to learn the back-end of developing software. </p>
- 
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>My first site</h3>
-            <p>I have always wanted to make a web applications and am lucky to say it's my first projecct which is far from what I saw in my mind but still excited to have actually coded my first site myself which is a big thing for me for now.</p>
-            <p>Earlier though I have made simple calculators using python,
-            <p>also I have tried making sites with canvas which resulted to some funny looking things but took away with some experience with me .As of right now my goal is get better and make some good webapplications .So it's just  the beggining. </p>
+        <div id="dropdownMenu" class="dropdown-menu">
+            <a href="#" onclick="showSection('skills')">Skills</a>
+            <a href="#" onclick="showSection('projects')">Projects</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
         </div>
-       
-    </section>
-    
-  
-    <section id= "follow">
-        <h4>Contact</h4>
-        <a href="instagram.com/@suvvy_max">My Instagram</a>
-        <a href="mxmu025@gmail.com">My email</a>
     </section>
 
-    <script src="script.js"></script>
+    
+    <section id="skills" class="hidden-section">
+        <h2>Skills</h2>
+        <p>List your technical and soft skills here.</p>
+    </section>
+
+    <section id="projects" class="hidden-section">
+        <h2>Projects</h2>
+        <p>Showcase your projects with links and descriptions.</p>
+    </section>
+
+    <section id="contact" class="hidden-section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mxmu025@gmail.com">mxmu025@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/suvvy-max" target="_blank">Instagram</a></p>
+    </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
+
